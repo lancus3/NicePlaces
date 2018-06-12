@@ -1,38 +1,9 @@
-.carousel-cell {
-  width: 100%;
-  /* full width */
-  height: 50vh;
-  /* height of carousel */
-  min-height: 250px;
-  background-size: cover;
-  margin-right: 10px;
-  background-position: center;
-  text-align: center;
-  position: relative;
-}
+.carousel-cell { width: 100%; /* full width */ height: 50vh; /* height of carousel */ min-height: 250px; background-size: cover; margin-right: 10px; background-position: center; text-align: center; position: relative; }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-}
+.container { max-width: 1200px; margin: 0 auto; text-align: center; color: white; }
 
-.flickity-page-dots {
-  display: none;
-}
+.flickity-page-dots { display: none; }
 
-.button {
-  position: absolute;
-  top: 30px;
-  right: 20px;
-  cursor: pointer;
-}
+.button { position: absolute; top: 30px; right: 20px; cursor: pointer; }
 
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: #B8B8B8;
-}
-
-/*# sourceMappingURL=style.css.map */
+.progress-bar { height: 20px; width: 0; background: #B8B8B8; }
