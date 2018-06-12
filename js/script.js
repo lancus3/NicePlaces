@@ -15,9 +15,7 @@ var flkty = new Flickity( '.main-carousel', {
 
 var button = document.querySelector('.button');
 
-button.addEventListener( 'click', function( event ) {
-  flkty.selectCell(0);
-  });
+
 
   var progressBar = document.querySelector('.progress-bar')
 
