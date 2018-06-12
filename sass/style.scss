@@ -1,0 +1,22 @@
+.carousel-cell {
+    width: 100%; /* full width */
+    height: 50vh; /* height of carousel */
+    min-height: 250px;
+    background-size: cover;
+    margin-right: 10px;
+    background-position: center;
+    text-align: center;
+
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #141313;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
