@@ -1,44 +1,63 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Nice Places</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
-    <link rel="stylesheet" type="text/css" href="vendor/flickity.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nice Places</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendor/flickity.min.css">
+        
+    </head>
 
-<body>
-    <div class="main-carousel">
-        <div class="carousel-cell" id="carousel-cel1" style="background-image: url('https://images.pexels.com/photos/14621/Warsaw-at-night-free-license-CC0.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
-            <div class="container">
-                <p>WARSAW</p>
+    <body>
+        <div class="main-carousel">
+            <div class="carousel-cell" id="carousel-cell1" style= "background-image: url('https://images.pexels.com/photos/14621/Warsaw-at-night-free-license-CC0.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+                <div class="container">
+                    <p>WARSAW</p>
+                </div>
             </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cel2" style="background-image: url('https://images.pexels.com/photos/262413/pexels-photo-262413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
-            <div class="container">
-                <p>LONDON</p>
+            <div class="carousel-cell" id="carousel-cell2" style= "background-image: url('https://images.pexels.com/photos/262413/pexels-photo-262413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+                <div class="container">
+                    <p>LONDON</p>
+                </div>
             </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cel3" style="background-image: url('https://images.pexels.com/photos/811715/pexels-photo-811715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
-            <div class="container">
-                <p>PARIS</p>
+            <div class="carousel-cell" id="carousel-cell3" style= "background-image: url('https://images.pexels.com/photos/811715/pexels-photo-811715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+                <div class="container">
+                    <p>PARIS</p>
+                </div>
             </div>
-        </div>
-        <div class="carousel-cell" id="carousel-cel4" style="background-image: url('https://images.pexels.com/photos/126292/pexels-photo-126292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
-            <div class="container">
-                <p>PRAGUE</p>
+            <div class="carousel-cell" id="carousel-cell4" style= "background-image: url('https://images.pexels.com/photos/126292/pexels-photo-126292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
+                <div class="container">
+                    <p>PRAGUE</p>
+                </div>
             </div>
+            <div class="carousel-cell" id="carousel-cell5" style= "background-image: url('https://images.pexels.com/photos/6502/city-capital-italy-historical.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+                <div class="container">
+                    <p>ROME</p>
+                </div>
+            </div>
+            
         </div>
-        <div class="carousel-cell" id="carousel-cel5" style="background-image: url('https://images.pexels.com/photos/6502/city-capital-italy-historical.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
-        <div class="container">
-            <p>ROME</p>
+        <div class="restart">
+            <button class= "button">RESTART</button>
         </div>
-    </div>
+        <div class="progress-bar"></div>
 
-    <script src="vendor/flickity.pkgd.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+        <h1>Flickity - hash</h1>
 
-</html>
+    <p>
+    View:
+    <a href="#carousel-cell1">Cell 1</a>,
+    <a href="#carousel-cell2">Cell 2</a>,
+    <a href="#carousel-cell3">Cell 3</a>,
+    <a href="#carousel-cell4">Cell 4</a>,
+    <a href="#carousel-cell5">Cell 5</a>
+    </p>
+        
+        <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
+        <script src="vendor/flickity.pkgd.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+    </html>

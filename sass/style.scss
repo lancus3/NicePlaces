@@ -6,6 +6,7 @@
     margin-right: 10px;
     background-position: center;
     text-align: center;
+    position: relative;
 
   }
 
@@ -13,10 +14,24 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    color: #141313;
+    color: rgb(255, 255, 255);
 }
 
 .flickity-page-dots {
     display: none;
 }
 
+.button {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background: #B8B8B8;
+  }
+
+  

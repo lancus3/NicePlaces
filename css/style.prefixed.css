@@ -8,23 +8,30 @@
   margin-right: 10px;
   background-position: center;
   text-align: center;
+  position: relative;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  color: #ffffff;
+  color: white;
 }
 
 .flickity-page-dots {
-  bottom: -22px;
+  display: none;
 }
 
-.flickity-page-dots .dot {
-  width: 0px;
-  height: 0px;
-  opacity: 0;
-  background: transparent;
+.button {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #B8B8B8;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
