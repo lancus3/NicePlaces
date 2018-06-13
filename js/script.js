@@ -45,16 +45,18 @@ window.initMap = function () {
     document.getElementById('map'), { zoom: 4, center: dataCarousel[0].coords });
   // The marker, positioned at Uluru
   
-
+  function makeSizer(j) {
+    return function() {
+      flkty.selectCell(j);  
+    };
+  }
   var marker =[];
   for (var j = 0; j < dataCarousel.length; j++) {
     marker[j] = new google.maps.Marker({ 
       position: dataCarousel[j].coords,
       map: map 
     });
-  marker[j].addListener( 'click', function( j ) {
-    flkty.selectCell(j);
-  });
+  marker[j].addListener( 'click', makeSizer(j));
     
 
   };
