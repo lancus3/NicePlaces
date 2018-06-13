@@ -44,10 +44,24 @@ window.initMap = function () {
   var map = new google.maps.Map(
     document.getElementById('map'), { zoom: 4, center: dataCarousel[0].coords });
   // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({ position: dataCarousel[0].coords, map: map });
+  
+
+  var marker =[];
   for (var j = 0; j < dataCarousel.length; j++) {
-    var marker1 = new google.maps.Marker({ position: dataCarousel[j].coords, map: map });
-  }
-}
+    marker[j] = new google.maps.Marker({ 
+      position: dataCarousel[j].coords,
+      map: map 
+    });
+  marker[j].addListener( 'click', function( j ) {
+    flkty.selectCell(j);
+  });
+    
 
+  };
+  
+  flkty.on( 'change', function( index ) {
+      map.panTo(dataCarousel[index].coords),
+      map.setZoom(10)
+  });
 
+};
