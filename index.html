@@ -24,16 +24,8 @@
     </div>
     <div class="progress-bar"></div>
 
-    <h1>Flickity - hash</h1>
 
-    <p>
-        View:
-        <a href="#carousel-cell1">Cell 1</a>,
-        <a href="#carousel-cell2">Cell 2</a>,
-        <a href="#carousel-cell3">Cell 3</a>,
-        <a href="#carousel-cell4">Cell 4</a>,
-        <a href="#carousel-cell5">Cell 5</a>
-    </p>
+  
     <script id="template-product-item" type="x-tmpl-mustache">
             <div class="carousel-cell" id="{{id}}" style="background-image: url({{ image }})">
                 <div class="container"><h2>{{ title }}</h2>
@@ -51,38 +43,54 @@
                 image: "https://images.pexels.com/photos/14621/Warsaw-at-night-free-license-CC0.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 title: "Warsaw",
                 id: "carousel-cell1",
-                description: '<p>Warsaw </p> <img src=  "http://via.placeholder.com/400x200" alt="Photo placeholder">'
+                description: '<p>Warsaw </p> <img src=  "http://via.placeholder.com/400x200" alt="Photo placeholder">',
+                coords: {lat: 52.249848, lng: 21.012269}
             },
             {
                 image: "https://images.pexels.com/photos/262413/pexels-photo-262413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 title: "London",
                 id: "carousel-cell2",
-                description: '<p>London</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder">'
+                description: '<p>London</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder">',
+                coords: {lat: 51.501097, lng: -0.124733} 
             },
             {
                 image: "https://images.pexels.com/photos/811715/pexels-photo-811715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 title: "Paris",
                 id: "carousel-cell3",
-                description: '<p>Paris</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder">'
+                description: '<p>Paris</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder">',
+                coords: {lat: 48.858413, lng: 2.294458}
             },
             {
                 image: "https://images.pexels.com/photos/126292/pexels-photo-126292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 title: "Prague",
                 id: "carousel-cell4",
-                description: '<p>Prague</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder">'
+                description: '<p>Prague</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder">',
+                coords: {lat: 50.087783,     lng: 14.421241} 
+ 
             },
             {
                 image: "https://images.pexels.com/photos/6502/city-capital-italy-historical.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                 title: "Rome",
                 id: "carousel-cell5",
-                description: '<p>Rome</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder">'
+                description: '<p>Rome</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder">',
+                coords: {lat: 41.896352,  lng: 12.481566}
+                
             }
         ];
     </script>
+
+
+    <div id="map"></div>
+
+
+
+
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="vendor/hash.js"></script>
     <script src="vendor/mustache.js"></script>
     <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl1X6cfi3hxv2xAdfQbFpDyVsONhr9w5c&callback=initMap">
+    </script>
 </body>
 
 </html>
